@@ -1,0 +1,100 @@
+body {
+  background: #fff;
+  color: navy;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 50px;
+}
+
+h1 {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.appointment__manage, .appointment__display {
+  margin: 0 auto;
+  padding: 0;
+  width: 48%;
+}
+
+.new__reveal {
+  background-color: orange;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 5px 10px;
+  text-align: center;
+  width: 120px;
+}
+
+/*.new__reveal:hover {
+  transform: scale(1.25);
+}*/
+.appointment__add, .appointment__search {
+  margin: 20px auto;
+}
+.or {
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
+.new__form {
+  background-color: #efefef;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new__form input {
+  border: 1px solid orange;
+  color: navy;
+  display: none;
+  height: 25px;
+  margin: 5px auto;
+  width: 60%;
+}
+
+input[type=submit] {
+  background-color: orange;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 5px 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.appointment__search {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment__search input {
+  border: 1px solid orange;
+  color: navy;
+  height: 25px;
+  margin: 5px auto;
+  width: 60%;
+}
+
+.appointment__search [type=submit] {
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 30px;
+  margin: 5px auto;
+  width: 140px;
+}
+
+.appointment__table {
+  margin: 20px auto;
+  width: 90%;
+}
+
+td {
+  padding: 8px 8px;
+}
+
+.appointment__row:nth-of-type(even) {
+  background: #dfdfdf;
+}
