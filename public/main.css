@@ -11,10 +11,19 @@ h1 {
   width: 100%;
 }
 
+.error__count {
+  text-decoration: underline;
+  -moz-text-decoration-color: orange; /* Code for Firefox */
+  text-decoration-color: orange;
+}
+
 .appointment__manage, .appointment__display {
   margin: 0 auto;
   padding: 0;
-  width: 48%;
+  width: 38%;
+}
+.appointment__display  {
+  width: 60%;
 }
 
 .new__reveal {
@@ -39,9 +48,10 @@ h1 {
 }
 .new__form {
   background-color: #efefef;
-  height: 0px;
+  height: -20px;
   display: flex;
   flex-direction: column;
+
 }
 
 .new__form input {
@@ -86,15 +96,20 @@ input[type=submit] {
   width: 140px;
 }
 
-.appointment__table {
+table {
   margin: 20px auto;
-  width: 90%;
+  width: 98%;
+}
+
+tr {
+  width: 100%;
+}
+
+tr:nth-of-type(even) {
+    background: #dfdfdf;
 }
 
 td {
   padding: 8px 8px;
-}
-
-.appointment__row:nth-of-type(even) {
-  background: #dfdfdf;
+  width: 33%;
 }

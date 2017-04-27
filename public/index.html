@@ -14,7 +14,8 @@
     <div class="appointment__manage">
         <div class="appointment__errors">
             <h3>Errors:</h3>
-            <p class="error__message">You currently have no errors</p>
+            <p class="error__message">You currently have <span class="error__count">1 error:</span></p>
+            <p class="error__details"></p>
         </div>
         <div class="appointment__add">
             <p class="new__reveal">New Appt.</p>
@@ -22,38 +23,17 @@
                 <input type="date" name="date" placeholder="Select Date">
                 <input type="time" name="time" placeholder="Select Time">
                 <input type="text" name="description" size="40" placeholder="Descriptipn">
-                <input type='submit'>
+                <input class="new__add" type='submit' value="Add">
+                <input class="new__cancel" type='submit' value="Cancel">
             </form>
         </div>
         <p class="or"> - or - </p>
         <div class="appointment__search">
-            <input type="search" placeholder="Search">
-            <input type="submit" value="Search">
+            <input class="search__input" type="search" placeholder="Search">
+            <input class="search__button" type="submit" value="Search">
         </div>
     </div>
     <div class="appointment__display">
-        <table class="appointment__table">
-            <tr class="appointment__row">
-                <th>Date</th>
-                <th>Time</th>
-                <th>Description</th>
-            </tr>
-            <tr class="appointment__row">
-                <td>06/01/2017</td>
-                <td>7:00pm</td>
-                <td>Go to the beach with the pups</td>
-            </tr>
-            <tr class="appointment__row">
-                <td>06/01/2017</td>
-                <td>7:00pm</td>
-                <td>Go to the beach with the pups</td>
-            </tr>
-            <tr class="appointment__row">
-                <td>06/01/2017</td>
-                <td>7:00pm</td>
-                <td>Go to the beach with the pups</td>
-            </tr>
-        </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
