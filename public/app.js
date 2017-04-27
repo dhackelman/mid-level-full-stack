@@ -84,7 +84,20 @@
 
 
     function addNewAppointment() {
-        console.log('add appt');
+        console.log($('.new__info'));
+        var newApptArr = $('.new__info');
+        var newAppt = {
+          appt_date: '',
+          appt_time: '',
+          appt_desc: ''
+        };
+        newAppt.appt_date = newApptArr[0].value;
+        newAppt.appt_time = newApptArr[1].value;
+        newAppt.appt_desc = newApptArr[2].value
+        console.log(newAppt);
+        table_data.unshift(newAppt);
+        $('table').remove();
+        getAppointments('');
     }
 
     function appointment_ajax() {
@@ -95,10 +108,14 @@
             type: "GET",
             url: "./db/practice.pl",
             success: function(data) {
-                console.log('success', data);
+                // console.log('success', data);
             },
             error: function(resp) {
-                console.log('error', resp);
+                // console.log('error', resp);
+                var respText = resp.statusText;
+                var respStatus = resp.status;
+                $('.error__count')[0].innerHTML = "1 error:";
+                $('.error__details')[0].innerHTML = `${respStatus} = ${respText}`;
             }
         });
     }
