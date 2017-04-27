@@ -83,6 +83,8 @@
   function appointment_ajax() {
     $.ajax({
         url: "https://localhost:8080/",
+        Access-Control-Allow-Origin: *,
+        crossDomain: true,
       }).done(function(response) {
         console.log(response);
       });
