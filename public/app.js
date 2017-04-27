@@ -82,7 +82,7 @@
 
   function appointment_ajax() {
     $.ajax({
-        url: "http://localhost:8080/",
+        url: "https://localhost:8080/",
       }).done(function(response) {
         console.log(response);
       });
