@@ -93,12 +93,12 @@
                 cors: true
             },
             type: "GET",
-            url: "https://localhost:8080/",
+            url: "../db/practice.pl",
             success: function(data) {
-                console.log(data);
+                console.log('success', data);
             },
             error: function(resp) {
-                console.log(resp);
+                console.log('error', resp);
             }
         });
     }
