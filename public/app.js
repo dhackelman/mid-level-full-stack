@@ -93,7 +93,7 @@
                 cors: true
             },
             type: "GET",
-            url: "../db/practice.pl",
+            url: "./db/practice.pl",
             success: function(data) {
                 console.log('success', data);
             },
